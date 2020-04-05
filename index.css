@@ -1,0 +1,334 @@
+/*font-family: 'Poppins', sans-serif;
+font-family: 'Open Sans', sans-serif;
+Pink: hsl(322, 100%, 66%)
+
+### Neutral
+
+- Very Pale Cyan: hsl(193, 100%, 96%)
+- Very Dark Cyan: hsl(192, 100%, 9%)
+- Grayish Blue: hsl(208, 11%, 55%)
+- Pink: hsl(322, 100%, 66%)*/
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    box-sizing: border-box;
+}
+/*Entire site is divided into 3 sections and an additional overlapping division near footer.*/
+/*section 1 styling*/
+.back-img{
+    position: relative;
+    z-index: -1;
+    background-color: hsl(193, 100%, 96%);
+}
+/*.sec1-head{
+
+}*/
+.sec1-content{
+    padding: 20px;
+    margin: 10px;
+}
+.c-texthead{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+.c-textcontent{
+    font-family:'Open Sans', sans-serif;
+    font-size: 16px;
+}
+button{
+    background-color: hsl(322, 100%, 66%);
+    padding:15px;
+    margin:15px 0;
+    border:none;
+    color:white;
+}
+.button1{
+    background-color: white;
+    padding:10px;
+    margin: 0;
+    color:black;
+    float: right;
+    border-radius: 20px;
+}
+.button2{
+    border-radius:30px;
+}
+.logo{
+    padding: 10px;
+    float: left;
+}
+/*section 2*/
+.section2{
+    text-align: center;
+    margin: 20px;
+}
+
+/*intermediate div*/
+.intermediate{
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px grey;
+
+}
+.button3{
+    background-color: hsl(322, 100%, 66%);
+    color:white;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 15px;
+}
+/*section 3*/
+.section3{
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+}
+.section3 > .logo{
+    color: white;
+}
+.list1, .list2{
+    list-style-type: none;
+}
+.location,.phone,.mail{
+    padding:10px;
+    margin:5px;
+}
+.sec3-add, .sec3-phone, .sec3-mail{
+    padding:10px;
+    margin:5px;
+}
+li{
+    padding:10px;
+    margin:5px;
+}
+.div-buttons{
+    text-align:center;
+    padding:20px 10px;
+}
+.div-buttons > i{
+    background-color: white;
+}
+.button{
+    background-color: hsl(192, 100%, 9%);
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+.contacts{
+    display:flex;
+    flex-direction: row;
+}
+.location{
+    height:33px;
+}
+.sec3-divp{
+    margin-top:100px;
+}
+div > .logo{
+    width:120px;
+}
+
+
+
+@media only screen and (max-width:375px) {
+    /*section 1*/
+    .section1{
+        text-align: center;
+        padding:0px;
+        margin:0px;
+    }
+    .mobile-bg{
+        display: block;
+        position: absolute;
+        z-index: -1;
+        background-color: lightcyan;
+    }
+    .desktop-bg{
+        display: none;
+    }
+    .sec1-head{
+        padding:10px;
+        margin:5px;
+    }
+    .logo{
+        width:80px;
+        height:auto;
+    }
+    .mockups{
+        width:250px;
+        margin:15px auto 50px;
+        height:auto;
+        border:1px solid;
+    }
+    h1.mis{
+        padding:15px;
+    }
+    h1 > p.c-textcontent{
+        padding:10px 0;
+    }
+    .button2{
+        width: 250px;
+        margin: 20px auto 20px;
+        height: auto;
+        border: 1px solid;
+    }
+    /*section 2*/
+    .sec2-div1{
+        box-shadow: 0px 5px 10px rgb(167, 161, 161);
+        margin:30px auto;
+        padding:20px;
+        border-radius: 10px;
+    }
+    h2.c-texthead{
+        padding:10px 0;
+        margin:5px;
+    }
+    p.c-textcontent{
+        padding:10px;
+        margin:10px 20px;
+    }
+    .grow, .flowing, .users{
+        width:270px;
+        height:auto;
+    }
+    /*section 3*/
+    .section3{
+        background-color: hsl(192, 100%, 9%);
+        color: white;
+        padding:10px;
+    }
+    .license{
+        text-align:center;
+        font-size: 12px;
+    }
+    .intermediate{
+        position:relative;
+        top:50px;
+    }
+}
+@media only screen and (min-width:375px) {
+    main{
+        display: flex;
+        width:1445px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .sec1-head{
+        padding:20px;
+        margin:10px;
+    }
+    .mobile-bg{
+        display: none;
+    }
+    .desktop-bg{
+        display: block;
+        
+        position: absolute;
+        z-index: -1;
+        background-color: lightcyan;
+    }
+    .combined{
+        display:flex;
+        margin:100px 50px;
+    }
+    .mis {
+        line-height: 1.5;
+        padding: 15px 0;
+
+    }
+    .button2{
+        padding:20px 30px;
+    }
+    .sec1-content{
+        width:50%;
+        text-align:left;
+        position: relative;
+        margin:auto;
+    }
+    .sec1-illust{
+        text-align: right;
+        vertical-align: middle;
+        width: 50%;
+    }
+    .mockups{
+        width:100%;
+        height:auto;
+    }
+    /**/
+    .sec2-div1{
+        display: flex;
+        flex-direction: row-reverse;
+        box-shadow: 0px 5px 10px rgb(167, 161, 161);
+        margin:30px auto;
+        padding:20px;
+        padding-left: 80px;
+        border-radius: 10px;
+        width: 1200px;
+        height:auto;
+        text-align:left;
+    }
+    .sec2-div1 > div{
+        position: relative;
+        margin: auto;
+        padding:10px;
+        width:70%;
+    }
+    .grow, .flowing, .users{
+        width:30%;
+        height:auto;
+    }
+    .div-reverse{
+        display: flex;
+        flex-direction: row;
+    }
+    .section3{
+        display: flex;
+        padding:20px;
+    }
+    .sec3-divp{
+        width:35%;
+        padding:60px;
+        margin:20px;
+    }
+    .list1{
+        margin:120px 10px;
+        padding:10px;
+        text-align:left;
+    }
+    .list2{
+        margin:120px 10px;
+        padding:10px;
+        text-align:left;
+    }
+    .div-buttons{
+        margin:120px 10px;
+        padding:10px;
+        text-align:left;
+    }
+    .license{
+        position: relative;
+        bottom:-150px;
+        text-align:left;
+    }
+    .intermediate{
+        width:50%;
+        text-align:center;
+        margin:20px auto;
+        padding:30px;
+        position:relative;
+        top:50px;
+
+    }
+    
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
